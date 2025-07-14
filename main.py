@@ -1,11 +1,11 @@
-# ACL - Simple Calculator API
+# main.py
 
 from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/add")
-def add(num1: int, num2: int):
-    return {"result": num1 + num2}
-
+# Simple route to test
+@app.get("/")
+def read_root():
+    return {"message": "Hello, ACL from FastAPI!"}  # ACL signature
 
