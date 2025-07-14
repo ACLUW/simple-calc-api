@@ -1,0 +1,8 @@
+# render.yaml | ACL Deployment Config
+
+services:
+  - type: web
+    name: simple-calc-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
